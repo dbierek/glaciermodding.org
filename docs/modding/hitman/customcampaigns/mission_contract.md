@@ -9,7 +9,7 @@ For this tutorial, we will go over creating a custom mission contract.
 
 ## Creating the `mission_bank.contract.json` file
 
-In GlacierKit, in the `content/chunk0/` folder, create a new folder named `Mission Contracts`. In that folder create a new file named `mission_bank.contract.json`, click it, and set its contents to:
+In GlacierKit, in the `shared/chunk0/` folder, create a new folder named `Mission Contracts`. In that folder create a new file named `mission_bank.contract.json`, click it, and set its contents to:
 
 ```json
 {

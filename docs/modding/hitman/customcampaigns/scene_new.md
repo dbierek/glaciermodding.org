@@ -266,7 +266,7 @@ In the `Text tools`, convert `(planning contract) modlandia modtown` to a Hex ha
 Press the save button.
 
 ## Creating a new Planning Contract file
-In the `content/chunk0/Planning Contracts` folder, create a new folder named `modtown`. Right-click on the new `modtown` folder and click `New file` and set the filename to our new planning contract's hex hash with `.JSON` at the end: `001421449C722898.JSON`.
+In the `shared/chunk0/Planning Contracts` folder, create a new folder named `modtown`. Right-click on the new `modtown` folder and click `New file` and set the filename to our new planning contract's hex hash with `.JSON` at the end: `001421449C722898.JSON`.
 
 Open that file and set the contents to:
 ```json
@@ -299,7 +299,7 @@ Replace `[NEW GENERATED EXIT UUID]` with a new UUID generated using GlacierKit.
 Press the save button.
 
 ## Creating a new Mission Contract file
-Right-click on the `content/chunk0/Mission Contracts` folder, click `New file`, and set the filename to `mission_modtown.contract.json`. Open that file and set the contents to:
+Right-click on the `shared/chunk0/Mission Contracts` folder, click `New file`, and set the filename to `mission_modtown.contract.json`. Open that file and set the contents to:
 ```json
 {
     "Data": {
@@ -397,7 +397,7 @@ and press the `Continue` button.
 
 Press the save button.
 
-Download the [empty_scenario_brick.entity.json](resources/empty_scenario_brick.entity.json) template again and save it as `content/chunk2/scenario_modtown.entity.json` and click it.
+Download the [empty_scenario_brick.entity.json](resources/empty_scenario_brick.entity.json) template again and save it as `shared/chunk2/scenario_modtown.entity.json` and click it.
 In the `Metadata` tab, in the `Factory hash` field, enter:  
 `[assembly:/_pro/scenes/missions/hitman_campaign_demo/mission_modtown/scenario_modtown.brick].pc_entitytype`  
 In the `Blueprint hash`, enter:
@@ -795,7 +795,7 @@ Press the save button.
 ## Adding lighting and a sky
 Our scenario will also need lighting, a sky, and physics, otherwise everything will be dark and grey.
 
-Download the [tod_day_sunny_clear.entity.json](resources/tod_day_sunny_clear.entity.json) file and save it to your `content/chunk2` folder as `tod_day_sunny_clear.entity.json`. This is a basic "time of day" brick that we can drop into any custom scene, that sets up a sunny clear day and blue sky.
+Download the [tod_day_sunny_clear.entity.json](resources/tod_day_sunny_clear.entity.json) file and save it to your `shared/chunk2` folder as `tod_day_sunny_clear.entity.json`. This is a basic "time of day" brick that we can drop into any custom scene, that sets up a sunny clear day and blue sky.
 
 Let's add some IOI strings for the time of day brick as well. In GlacierKit, on the `Settings` tab, in the `Custom paths` section, click the `Add an entry` button and enter:    
 `[assembly:/_pro/scenes/missions/hitman_campaign_demo/tod_day_sunny_clear.brick].pc_entitytype`  
@@ -882,7 +882,7 @@ Replace the `null` value for the `m_WorldBounds` property with the entity id of 
 Press the save button.
 
 ## Updating the Charset
-For simplicity, let's copy our entire outfit folder from `bank/chunk12/Outfits` to `content/chunk2`. This cannot be done from GlacierKit, so in GlacierKit right-click on the `chunk12` folder and click `Show in Explorer`. Copy the outfit folder, then go to the `content/chunk2` folder and paste it.
+For simplicity, let's copy our entire outfit folder from `bank/chunk12/Outfits` to `shared/chunk2`. This cannot be done from GlacierKit, so in GlacierKit right-click on the `chunk12` folder and click `Show in Explorer`. Copy the outfit folder, then go to the `shared/chunk2` folder and paste it.
 
 In GlacierKit, the new folder should have appeared. Let's modify the files to fit our new mission and NPCs.
 
@@ -981,7 +981,7 @@ In GlacierKit, go to the `Settings` tab and on the `Custom paths` section, scrol
 
 On the `Text tools` tab, paste that IOI string into the `Hash calculator` field and copy the value in the `Hex` text field.
 
-Back in NavKit, click the `Save Navp` button, and navigate to the `content/chunk2` folder and name it the hex value you copied.
+Back in NavKit, click the `Save Navp` button, and navigate to the `shared/chunk2` folder and name it the hex value you copied.
 
 For the AIRG, let's use:  
 `[assembly:/_pro/scenes/missions/hitman_campaign_demo/mission_modtown/scene_modtown.airg].pc_airg`  
@@ -990,7 +990,7 @@ In GlacierKit, go to the `Settings` tab and on the `Custom paths` section, scrol
 
 On the `Text tools` tab, paste that IOI string into the `Hash calculator` field and copy the value in the `Hex` text field.
 
-Back in NavKit, click the `Save Airg` button, and navigate to the `content/chunk2` folder and name it the hex value you copied.
+Back in NavKit, click the `Save Airg` button, and navigate to the `shared/chunk2` folder and name it the hex value you copied.
 
 Now that we have our NAVP and AIRG files, we need to tell the scenario to use them. In GlacierKit, go to the `scenario_modtown.entity.json` file on the `Tree` view, expand the `Scenario_Modtown > AI` node. Right-click on the `Pathfinding` node and click `Create Entity`, name it `Pathfinder_Configuration`, click on the new node and in the contents, replace everything after the `parent` field with:
 ```json
@@ -1156,9 +1156,9 @@ Now that we've modified the geometry, the old NAVP and AIRG don't accurately rep
 Let's open NavKit up, and follow the same steps as before:  
 1. Click the `Extract from game and build obj` button
 2. Click the `Build Navp from Obj and Scene` button
-3. Save the NAVP file to `content/chunk2/0051279576303266.navp`
+3. Save the NAVP file to `shared/chunk2/0051279576303266.navp`
 4. Click the `Build Airg from Navp` button
-5. Save the AIRG file to `content/chunk2/00D89D1CB094AD54.airg`  
+5. Save the AIRG file to `shared/chunk2/00D89D1CB094AD54.airg`  
 
 ![modtown_new_navp_and_airg.jpg](resources/modtown_new_navp_and_airg.jpg)  
 Redeploy, relaunch, and start the mission, and now Super Targetman will walk around the house if you throw a coin behind the house, or walk through the door if you lure him into the house.

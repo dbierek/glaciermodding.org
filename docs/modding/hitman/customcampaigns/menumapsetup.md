@@ -9,7 +9,7 @@ For this tutorial, we will go over patching the MenuMapSetup files. MenuMapSetup
 
 ## Creating the MenuMapSetup file
 
-In GlacierKit, on the `Files` tab, right-click on the `content/chunk0` folder and click `New File`. Name it `menumapsetup_hitman_campaign_demo.entity.json` or something similar.
+In GlacierKit, on the `Files` tab, right-click on the `shared/chunk0` folder and click `New File`. Name it `menumapsetup_hitman_campaign_demo.entity.json` or something similar.
 
 Click on this new file and switch to the `Metadata` tab. Let's give this file a `Factory hash` and `Blueprint hash`. For the `Factory hash`, let's use:  
 `[assembly:/_pro/scenes/bricks/menumapsetup_hitman_campaign_demo.brick].pc_entitytype`  
@@ -105,7 +105,7 @@ On the `Metadata` tab, click the `Add an entry` button. Enter:
 `[assembly:/_pro/scenes/bricks/menumapsetup_hitman_campaign_demo.brick].pc_entitytype`  
 and press the `Continue` button.
 
-Click the save button. Navigate to the `content/chunk0` folder and enter the name `mainmenu`.
+Click the save button. Navigate to the `shared/chunk0` folder and enter the name `mainmenu`.
 
 Click the `Save` button.
 

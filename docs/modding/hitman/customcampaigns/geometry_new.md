@@ -102,7 +102,7 @@ Now click `File > Export > Glacier RenderPrimitive (prims, materials, textures, 
 You'll wind up with a folder of files like this:  
 ![blender_export_results.jpg](resources/blender_export_results.jpg)
 
-Create a new folder named `content/chunk2/Geometry` and copy these files to that folder:  
+Create a new folder named `shared/chunk2/Geometry` and copy these files to that folder:  
 `00AA77FDDA276A30.entity.json`  
 `0001A27B58E548FD.prim`  
 `0001A27B58E548FD.prim.meta.json`  
@@ -303,7 +303,7 @@ Redeploy, relaunch, and start the mission.
 
 > Note: If you later decide to modify the blender geometry, you'll need to:  
 > 1. Recreate the Triangle Mesh in blender the same way as before  
-> 2. Copy the new ALOC file into your `content/chunk2/Geometry` folder  
+> 2. Copy the new ALOC file into your `shared/chunk2/Geometry` folder  
 > 3. Delete that ALOC file from the aloc folder in your NavKit output folder  
 
 ## Updating the images

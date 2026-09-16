@@ -75,7 +75,7 @@ We will also need this repository entry's id UUID under the `Editor` header text
 Click the save button.
 
 ## Updating the Mission contract
-Open the `content/chunk0/Mission Contracts/mission_bank.contract.json` file. Under the `Objectives` array, add the following object:
+Open the `shared/chunk0/Mission Contracts/mission_bank.contract.json` file. Under the `Objectives` array, add the following object:
 ```json
 {
     "Id": "[NEW GENERATED UUID]",

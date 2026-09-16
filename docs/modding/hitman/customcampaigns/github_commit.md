@@ -160,12 +160,12 @@ Fast-forward
  .gitignore                                        |    3 +-
  README.md                                         |  103 +-
  blobs/images/campaign_demo/campaign_demo_tile.jpg |  Bin 0 -> 188003 bytes
- content/chunk0/storyconfig.JSON.patch.json        |   25 +
+ shared/chunk0/storyconfig.JSON.patch.json        |   25 +
  manifest.json                                     |   33 +-
  package-lock.json                                 | 7779 +++++++++++++++++++++
  11 files changed, 8086 insertions(+), 255 deletions(-)
  create mode 100644 blobs/images/campaign_demo/campaign_demo_tile.jpg
- create mode 100644 content/chunk0/storyconfig.JSON.patch.json
+ create mode 100644 shared/chunk0/storyconfig.JSON.patch.json
  create mode 100644 package-lock.json
 ```
 Now your local `main` branch matches the `main` branch on the remote repository.
