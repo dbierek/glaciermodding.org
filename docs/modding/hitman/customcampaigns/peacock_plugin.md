@@ -39,7 +39,7 @@ Now we'll add our first mission. In between the log functions, add this:
 ```js
     controller.addMission([CONTENTS OF THE MISSION_BANK.CONTRACT.JSON FILE]);
 ```
-Replace `[CONTENTS OF THE MISSION_BANK.CONTRACT.JSON FILE]` with the entire contents of the `content/chunk0/Mission Contracts/mission_bank.contract.json` file.
+Replace `[CONTENTS OF THE MISSION_BANK.CONTRACT.JSON FILE]` with the entire contents of the `shared/chunk0/Mission Contracts/mission_bank.contract.json` file.
 
 Now we'll need to add the entrance for the bank mission:
 ```js

@@ -14,7 +14,7 @@ The repository stores metadata about various things in Hitman: World of Assassin
 For our purposes we will just be adding a new starting location for now. 
 
 ## Creating a repository file
-In GlacierKit, switch back to the `Files` tab, right-click on the `content/chunk0` folder and create a new file named `hitman_campaign_demo.repository.json`. (The exact filename doesn't really matter, as long as it ends with `.repository.json`, but for this tutorial we'll use `hitman_campaign_demo.repository.json`).
+In GlacierKit, switch back to the `Files` tab, right-click on the `shared/chunk0` folder and create a new file named `hitman_campaign_demo.repository.json`. (The exact filename doesn't really matter, as long as it ends with `.repository.json`, but for this tutorial we'll use `hitman_campaign_demo.repository.json`).
 
 ## Modifying the repository file
 In GlacierKit, click on the `hitman_campaign_demo.repository.json` file. You will see the repository editor:  

@@ -45,7 +45,7 @@ Set the `RepositoryId` to the value copied from the repositories file in the pre
 
 ![unlockables_ceo_office.jpg](resources/unlockables_ceo_office.jpg)
 
-Click the save button. Navigate to the `content/chunk0` folder and set the name to something like `campaign_demo`. Similarly to the repository file we created in the previous section, the only important part of the name is `.unlockables.json`, so you can name it whatever you'd like, but for this tutorial we'll refer to it as `campaign_demo.unlockables.json`.
+Click the save button. Navigate to the `shared/chunk0` folder and set the name to something like `campaign_demo`. Similarly to the repository file we created in the previous section, the only important part of the name is `.unlockables.json`, so you can name it whatever you'd like, but for this tutorial we'll refer to it as `campaign_demo.unlockables.json`.
 
 
 ## Next Steps
