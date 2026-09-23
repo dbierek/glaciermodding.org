@@ -58,7 +58,7 @@ export default function NavKit() {
             </header>
             <main>
                 <div className="container margin-vert--lg">
-                    <img src="/img/NavKit/gui.png" />
+                    <img src="/img/navkit/gui.png" />
                 </div>
             </main>
         </Layout>
